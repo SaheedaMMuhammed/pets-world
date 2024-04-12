@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MY WEBSITE</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/35db9f45ce.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+
+                <img src="images/55b068ff62ab94a12ed9b83eb61a142e.jpg" class="logo" >
+                <ul id="menu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Service</a></li>
+                    <li><a href="#portfolio">pets</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-sharp fa-solid fa-circle-xmark" onclick="closenav()"></i>
+
+                </ul>
+                <i class="fa-solid fa-bars" onclick="shownav()"></i>
+
+            </nav>
+            <div class="header-body">
+                <p>online pet store</p>
+                <h1><marquee behavior="" direction="up">welcome<span><br>to</span> <br> the world of pets</marquee></h1>
+            </div>
+
+        </div>
+
+    </div>
+  
+   <!-- --------------------------About------------------------ -->
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="aboutColumn1">
+                    <img src="images/download.jpeg" class="abot-image" width="430px">
+                </div>
+                <div class="aboutColumn2">
+                    <h1 class="SubTitle">About </h1>
+                    <p>
+                        Pets enrich life with more tenderness and affection. Maintaining and raising a new liability is a difficult undertaking in the mechanical and hectic world of today. Only those with pure hearts undertake and complete this tremendous task. Let's examine the significance of pets to people.
+                    </p>
+                    <div class="about-titles">
+                        <p class="tabList  activeList" onclick="aboutList('cat')">cats</p>
+                        <p class="tabList" onclick="aboutList('dog')">dogs</p>
+                        <p class="tabList" onclick="aboutList('bird')">birds</p>
+                    </div>
+                     <!-- ----------------------cats------------------------ -->
+                    <div class="about-contents active-content" id="cat">
+                        <ul>
+                            <li><span>Having the companionship of a cat can lower stress levels in children.</span></li>
+                            <li><span>Kids can learn the value of responsibility by helping to take care of a cat.</span></script> </li>
+                            <li><span>Having a cat helps improve interpersonal skills and empathy.</span></li>
+                            <li><span>A cat can be a much-needed 'confidante' to a child who needs emotional support.</span></li>
+                        </ul>
+                    </div>
+                     <!-- ----------------------dogs------------------------ -->
+                    <div class="about-contents" id="dog">
+                        <ul>
+                            <li><span>Dogs Make Us Feel Less Alone</li>
+                            <li><span>Dogs Help You Stop Stressing Out</li>
+                            <li><span>Dogs Can Help Us Cope in Times of Crisis</li>
+                            
+                        </ul>
+                    </div>
+                    <!-- ----------------------birds------------------------ -->
+                    <div class="about-contents" id="bird">
+                        <ul>
+                            <li><span>They are sociable, intelligent, and with the right socialization, can form wonderful bonds with their families.</span></li>
+                            <li><span>They even do well in homes with children, and are relatively easy (and inexpensive) to care for and train</span></li>
+                            <li><span>Because of their small (and seriously adorable) size, birds require minimal space, and so are excellent choices for those with small living spaces.</span></li>
+                            
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ------------------SERVICES----------------------------- -->
+    <div id="services">
+        <div class="container">
+            <h1 class="SubTitle">My Services</h1>
+            <div class="service-list">
+                    <div class="service-box" id="cat-id">
+                       
+                        <h2>cat breeds available</h2>
+                        <p>maine coon<br>
+                            persian cat<br>
+                            siameese cat
+                        </p>
+                        <p id="cat" class="service">exotic shothair<br>
+                            american shothair<br>
+                            bengal cat
+                        </p>
+                        <p  id ="catDict" class="service-more" onclick="aboutService('cat','cat-id','catDict')">Read more</p>
+                    </div>
+                    <div class="service-box" id="dog-id">
+                        <h2>dogs</h2>
+                        <p >german shepherd<br>
+                            bull dog<br>
+                            labrador<br>
+                            golden retriever<br>
+                        </p>
+                        <p id="dog" class="service">pomeranian<br>
+                            beagle<br>
+                            shih tzu<br>
+                            alaskan malamute<br>
+                            chihuahua
+                        </p>
+                        <p id ="dogDict" class="service-more" onclick="aboutService('dog','dog-id','dogDict')">Read more</p>
+                    </div>
+                    <div class="service-box" id="birds-id">
+                        <h2>birds</h2>
+                        <p>hyacinth macaw<br>
+                            African grey parrot<br>
+                            budgie<br>
+                            columbidae
+                        </p>
+                        <p id="bird" class="service">cockatiel<br>
+                            parrotlet<br>
+                            love birds<br>
+                        </p>
+                        <p  id ="videoDict" class="service-more" onclick="aboutService('bird','birds-id','videoDict')">Read more</p>
+                    </div>
+
+            </div>
+
+        </div>
+    </div>
+<!-- -------------------------about us------------------------ -->
+
+<div id="portfolio">
+    <div class="container">
+        <h1 class="SubTitle"> best sellers</h1>
+        <div class="worklist">
+            <div class="work">
+                <img src="images/GettyImages-145577979-d97e955b5d8043fd96747447451f78b7.jpg">
+                <div class="workdata">
+                    <h3>Ragdoll</h3>
+                    <p>The Ragdoll is a breed of cat with a distinct colorpoint 
+                        coat and blue eyes. Its morphology is large and weighty,
+                         and it has a semi-long and silky soft coat. American breeder
+                          Ann Baker developed Ragdolls in the 1960s. They are best known for their docile,
+                           placid temperament and affectionate nature  </p>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/golden-retriever.webp">
+                <div class="workdata">
+                    <h3>Golden retriever</h3>
+                    <p>The Golden Retriever is a Scottish breed of retriever dog
+                         of medium size. It is characterised by a gentle and 
+                         affectionate nature and a striking golden coat. 
+                         It is commonly kept as a pet and is among the most frequently 
+                         registered breeds in several Western countries. 
+                         It is a frequent competitor in dog shows and obedience trials; 
+                         it is also used as a gun dog (a type of hunting dog for soft-mouthed retrieving of fowl) 
+                         and may be trained for use as a guide dog.</p>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/download (1).jpeg">
+                <div class="workdata">
+                    <h3>Budgerigar</h3>
+                    <p>The budgerigar, also known as the common parakeet, 
+                        shell parakeet or budgie, is a small, long-tailed, 
+                        seed-eating parrot. Budgies are the only species 
+                        in the genus Melopsittacus. Naturally, the species 
+                        is green and yellow with black, scalloped markings 
+                        on the nape, back, and wings.</p>
+                    <a href="#"><i class="fa-brands fa-github"></i></a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<!-- -----------------Contact---------------- -->
+
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-links">
+                <h1 class="SubTitle">Contact me</h1>
+                <p><a href="mailto: ananthutm18@gmail.com"><i class="fa-solid fa-envelope"></i>petsworld@gmail.com</a></p>
+                <p><i class="fa-solid fa-square-phone"></i>+6565656565656</p>
+                <div class="socialmedia">
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+            </div>
+            <div class="contact-form">
+                <form name="google_form">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message" required></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <p id="message"></p>
+
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright @ saheeda. All rights reserved <i class="fa-sharp fa-solid fa-dumbbell"></i></p>
+    </div>
+</div>
+
+
+
+
+    <script>
+        var abtLists=document.getElementsByClassName("tabList");
+        var abtContents=document.getElementsByClassName("about-contents");
+        var serviceContets=document.getElementsByClassName("service");
+        var serviceDivs=document.getElementsByClassName("service-box");
+       
+        function aboutList(abtName){
+            
+            for (abtContent of abtContents){
+                abtContent.classList.remove("active-content");
+
+            }
+            for (abtList of abtLists){
+                abtList.classList.remove("activeList");
+
+            }
+            event.currentTarget.classList.add("activeList");
+
+            document.getElementById(abtName).classList.add("active-content");
+            
+        }
+        
+        function aboutService(serviceName,divName,divDisc){
+            
+           
+            for (serviceContet of serviceContets){
+                serviceContet.classList.remove("active-service");
+
+            }
+            for (serviceDiv of serviceDivs){
+                serviceDiv.classList.remove("service-div");
+
+            }
+            
+            
+
+            document.getElementById(serviceName).classList.add("active-service");
+            document.getElementById(divName).classList.add("service-div");
+            
+
+           
+        }
+        var menu=document.getElementById("menu");
+            function shownav(){
+                
+                menu.style.right="0";
+                
+            }
+            function closenav(){
+                menu.style.right="-200px";
+
+            }
+
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbyA-VvSCNtn69cF3sJnBUEyElP78gA5j95UgAefXwJkEPaOyw_PnS-doU1MnG-E7nyJSg/exec'
+        const form = document.forms['google_form']
+        const msg=document.getElementById('message')
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {msg.innerHTML="Sent Successfully"
+        setTimeout(function(){
+            msg.innerHTML=""
+        },5000)
+    form.reset()})
+            .catch(error => console.error('Error!', error.message))
+        })
+        
+      </script>
+
+</body>
+
+</html>
